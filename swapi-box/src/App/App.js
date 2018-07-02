@@ -4,6 +4,7 @@ import { Intro } from '../Intro/Intro';
 import { FavoritesButton } from '../FavoritesButton/FavoritesButton';
 import { PeopleButton } from '../PeopleButton/PeopleButton';
 import { PlanetsButton } from '../PlanetsButton/PlanetsButton';
+import { VehiclesButton } from '../VehiclesButton/VehiclesButton';
 
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
           <hr />
           <PeopleButton />
           <PlanetsButton />
+          <VehiclesButton />
         </main>
       </div>
     );
