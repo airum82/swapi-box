@@ -3,6 +3,7 @@ import './App.css';
 import { Intro } from '../Intro/Intro';
 import { FavoritesButton } from '../FavoritesButton/FavoritesButton';
 import { PeopleButton } from '../PeopleButton/PeopleButton';
+import { PlanetsButton } from '../PlanetsButton/PlanetsButton';
 
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
           <FavoritesButton />
           <hr />
           <PeopleButton />
+          <PlanetsButton />
         </main>
       </div>
     );
