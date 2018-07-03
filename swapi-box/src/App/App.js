@@ -5,6 +5,7 @@ import { FavoritesButton } from '../FavoritesButton/FavoritesButton';
 import { PeopleButton } from '../PeopleButton/PeopleButton';
 import { PlanetsButton } from '../PlanetsButton/PlanetsButton';
 import { VehiclesButton } from '../VehiclesButton/VehiclesButton';
+import { CategoryContainer } from '../CategoryContainer/CategoryContainer';
 
 
 class App extends Component {
@@ -25,6 +26,7 @@ class App extends Component {
           <PeopleButton />
           <PlanetsButton />
           <VehiclesButton />
+          <CategoryContainer />
         </main>
       </div>
     );
