@@ -10,4 +10,13 @@ describe('FavoritesButton', () => {
 
     expect(wrapper).toMatchSnapshot();
   })
+
+  it('Should click invoke the viewFavorites function on click', () => {
+    const mockViewFavorites = jest.fn();
+    const wrapper = shallow(<FavoritesButton
+                            viewFavorites={mockViewFavorites}
+                            />);
+    wrapper.simulate('click');
+    expect(mockViewFavorites).toBeCalled();
+  })
 })

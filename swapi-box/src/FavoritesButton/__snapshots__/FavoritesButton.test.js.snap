@@ -20,6 +20,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": "favorites",
+      "onClick": [Function],
     },
     "ref": null,
     "rendered": "favorites",
@@ -32,6 +33,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": "favorites",
+        "onClick": [Function],
       },
       "ref": null,
       "rendered": "favorites",
