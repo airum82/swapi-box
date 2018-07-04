@@ -14,7 +14,8 @@ class App extends Component {
     super()
     this.state = {
       helper: new helper(),
-      intro: {}
+      intro: {},
+      category: []
 
     }
   }
