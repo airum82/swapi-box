@@ -79,7 +79,7 @@ class App extends Component {
           <PeopleButton viewPeople={this.viewPeople} />
           <PlanetsButton />
           <VehiclesButton />
-          <CategoryContainer />
+          <CategoryContainer category={this.state.category}/>
         </main>
       </div>
     );

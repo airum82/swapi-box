@@ -1,0 +1,10 @@
+.category-container {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  background-color: gray; }
+
+.category-container ul {
+  list-style-type: none; }
+
+.category-container div {
+  background-color: #7a2e2e; }
