@@ -25,7 +25,7 @@ class App extends Component {
 
   }
 
-  retrieveNestedPeopleData = (people) => {
+  retrieveNestedHomeworld = (people) => {
     const promiseGroup = people.map( person => {
       return (
         fetch(person.homeworld)
@@ -37,21 +37,35 @@ class App extends Component {
     return Promise.all(promiseGroup)
   }
 
+  retreiveNestedSpecies = (people) => {
+    const promiseGroup = people.map( person => {
+      return (
+        fetch(person.species)
+        .then(response => response.json())
+        .then(result => this.state.helper.getSpeciesData(result))
+        .then(data => ({...person, ...data}))
+      )
+    });
+    return Promise.all(promiseGroup)
+  }
+
+
   viewPeople = () => {
     const url = 'https://swapi.co/api/people/';
     fetch(url)
     .then(response => response.json())
     .then(result => this.state.helper.cleanPeople(result))
-    .then(people => this.retrieveNestedPeopleData(people))
+    .then(people => this.retrieveNestedHomeworld(people))
+    .then(people => this.retreiveNestedSpecies(people))
     .then(cleanPeople => this.setState({ category: cleanPeople}))
   }
 
   componentDidMount() {
-    // const url = "https://swapi.co/api/films/";
-    // fetch(url)
-    // .then(response => response.json())
-    // .then(result => this.state.helper.pickFilmIntro(result))
-    // .then(intro => this.setState({ intro }))
+    const url = "https://swapi.co/api/films/";
+    fetch(url)
+    .then(response => response.json())
+    .then(result => this.state.helper.pickFilmIntro(result))
+    .then(intro => this.setState({ intro }))
   }
 
   render() {

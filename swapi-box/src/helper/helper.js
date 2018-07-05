@@ -35,5 +35,13 @@ export class helper {
     return homeworldInfo;
   }
 
+  getSpeciesData = (species) => {
+    const speciesData = {
+    species: species.name,
+    language: species.language
+    }
+    return speciesData
+  }
+
 
 }
