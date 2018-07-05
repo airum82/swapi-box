@@ -14,17 +14,25 @@ export class helper {
             }
   }
 
-  cleanPeople = (people) => {
+  cleanPeople = (people, fetchHomeworld) => {
   const starPeople = people.results.map(person => {
       return {
           name: person.name,
-          homeWorld: person.homeworld,
+          homeworld: person.homeworld,
           species: person.species[0],
           language: person.species[0],
           population: person.homeworld
       }
     });
     return starPeople
+  }
+
+  getHomeworldData = (homeworld) => {
+    const homeworldInfo = {
+      homeworld: homeworld.name,
+      population: homeworld.population
+    };
+    return homeworldInfo;
   }
 
 

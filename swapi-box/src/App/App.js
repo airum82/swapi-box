@@ -25,11 +25,24 @@ class App extends Component {
 
   }
 
+  retrieveNestedPeopleData = (people) => {
+    const promiseGroup = people.map( person => {
+      return (
+        fetch(person.homeworld)
+        .then(response => response.json())
+        .then(result => this.state.helper.getHomeworldData(result))
+        .then(data => ({...person, ...data}))
+      )
+    });
+    return Promise.all(promiseGroup)
+  }
+
   viewPeople = () => {
     const url = 'https://swapi.co/api/people/';
     fetch(url)
     .then(response => response.json())
     .then(result => this.state.helper.cleanPeople(result))
+    .then(people => this.retrieveNestedPeopleData(people))
     .then(cleanPeople => this.setState({ category: cleanPeople}))
   }
 
