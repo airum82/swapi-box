@@ -6,6 +6,7 @@ import { PeopleButton } from '../PeopleButton/PeopleButton';
 import { PlanetsButton } from '../PlanetsButton/PlanetsButton';
 import { VehiclesButton } from '../VehiclesButton/VehiclesButton';
 import { CategoryContainer } from '../CategoryContainer/CategoryContainer';
+import { Card } from '../Card/Card';
 import { helper } from '../helper/helper.js';
 
 

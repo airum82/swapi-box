@@ -1,5 +1,26 @@
 .intro {
   background-color: blue;
   font-size: 2em;
+  height: 100vh;
+}
 
+@-webkit-keyframes scroll {
+  0% {
+      -webkit-transform: translate(0, 100%);
+
+  }
+
+  100% {
+      -webkit-transform: translate(0, -100%)
+
+  }
+}
+
+.slide-up {
+  overflow: hidden;
+}
+
+.slide-up div {
+  display: inline-block;
+  -webkit-animation: scroll 15s infinite linear;
 }
