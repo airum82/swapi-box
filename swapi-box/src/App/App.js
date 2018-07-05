@@ -25,12 +25,20 @@ class App extends Component {
 
   }
 
-  componentDidMount() {
-    const url = "https://swapi.co/api/films/";
+  viewPeople = () => {
+    const url = 'https://swapi.co/api/people/';
     fetch(url)
     .then(response => response.json())
-    .then(result => this.state.helper.pickFilmIntro(result))
-    .then(intro => this.setState({ intro }))
+    .then(result => this.state.helper.cleanPeople(result))
+    .then(cleanPeople => this.setState({ category: cleanPeople}))
+  }
+
+  componentDidMount() {
+    // const url = "https://swapi.co/api/films/";
+    // fetch(url)
+    // .then(response => response.json())
+    // .then(result => this.state.helper.pickFilmIntro(result))
+    // .then(intro => this.setState({ intro }))
   }
 
   render() {
@@ -41,7 +49,7 @@ class App extends Component {
           <h1>Swapi-box</h1>
           <FavoritesButton viewFavorites={this.viewFavorites}/>
           <hr />
-          <PeopleButton />
+          <PeopleButton viewPeople={this.viewPeople} />
           <PlanetsButton />
           <VehiclesButton />
           <CategoryContainer />
