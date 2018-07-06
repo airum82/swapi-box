@@ -9,7 +9,7 @@ export class apiHelper {
     .then(response => response.json())
     .then(result => cleanPlanets(result))
     .then(firstResult => this.retrievePlanetResidents(firstResult))
-    .then(cleanedResult => setPlanetInfo(cleanedResult));
+    .then(cleanedResult => setPlanetInfo(cleanedResult, cleanedResult[0]));
   }
 
   retrievePlanetResidents = (planets) => {
@@ -37,6 +37,6 @@ export class apiHelper {
     fetch(url)
     .then(response => response.json())
     .then(result => cleanVehicles(result))
-    .then(data => setVehicleState(data))
+    .then(cleanedData => setVehicleState(cleanedData, cleanedData[0]))
   }
 }

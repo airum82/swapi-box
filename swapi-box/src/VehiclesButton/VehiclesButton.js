@@ -1,8 +1,10 @@
 import React from 'react';
 
-export const VehiclesButton = (props) => {
+export const VehiclesButton = ({ fetchVehicles, cleanVehicles, retrieveVehicles }) => {
   return (
-    <button>vehicles</button>
+    <button onClick={() => {
+      fetchVehicles(cleanVehicles, retrieveVehicles)
+    }}>vehicles</button>
 
   )
 }

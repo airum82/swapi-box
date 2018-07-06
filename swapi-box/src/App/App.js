@@ -19,7 +19,8 @@ class App extends Component {
       api : new apiHelper(),
       intro: {},
       people: [],
-      planets: []
+      planets: [],
+      vehicles: []
 
     }
   }
@@ -28,10 +29,16 @@ class App extends Component {
 
   }
 
-  retrieveData = (data) => {
+  retrieveData = (data, sampleItem) => {
+    let category;
+    if(Object.keys(sampleItem).includes('residents')) {
+      category = 'planets';
+    } else {
+      category = 'vehicles';
+    }
     console.log(data)
     this.setState({
-      planets: data
+      [category]: data
     })
   }
 
@@ -92,7 +99,11 @@ class App extends Component {
             retrieveData={this.retrieveData}
             cleanPlanetData={this.state.helper.cleanPlanetData}
           />
-          <VehiclesButton />
+          <VehiclesButton 
+           fetchVehicles={this.state.api.fetchVehicles}
+           cleanVehicles={this.state.helper.cleanVehicles}
+           retrieveVehicles={this.retrieveData} 
+          />
           <CategoryContainer category={this.state}/>
         </main>
       </div>

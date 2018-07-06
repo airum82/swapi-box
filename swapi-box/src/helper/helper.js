@@ -58,5 +58,15 @@ export class helper {
     return planetInfo
   }
 
+  cleanVehicles = (vehicles) => {
+  const vehicleInfo = vehicles.results.map(vehicle => {
+    return { name: vehicle.name,
+             model: vehicle.model,
+             classType: vehicle.vehicle_class,
+             passengerNumber: vehicle.passengers
+           }
+    })
+  return vehicleInfo;
+  }
 
 }
