@@ -1,7 +1,7 @@
 import React from 'react';
 
-export const PeopleButton = (props) => {
+export const PeopleButton = ({ viewPeople }) => {
   return (
-    <button>people</button>
+    <button onClick={viewPeople}>people</button>
   )
 }

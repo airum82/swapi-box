@@ -3,3 +3,27 @@
   grid-template-columns: 25% 75%;
   text-align: center;
 }
+
+.main {
+  background-color: #896e6e;
+}
+
+.main h1 {
+  color: #782F30;
+  font-size: 2.5em;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 4%;
+}
+
+.buttons button {
+  padding: 2% 3%;
+  background-color: #782F30;
+  color: #baa948;
+  font-size: 1em;
+  border: none;
+}
