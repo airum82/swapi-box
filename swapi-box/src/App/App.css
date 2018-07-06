@@ -3,3 +3,11 @@
   grid-template-columns: 25% 75%;
   text-align: center;
 }
+
+.main {
+  background-color: #896e6e;
+}
+
+.main h1 {
+  color: #782F30;
+}

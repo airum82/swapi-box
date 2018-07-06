@@ -43,5 +43,20 @@ export class helper {
     return speciesData
   }
 
+  cleanPlanetData = (planets) => {
+    const planetInfo = planets.results.reduce((planetList, planet) => {
+    const cleanedPlanet = {
+      name: planet.name,
+      terrain: planet.terrain,
+      population: planet.population,
+      climate: planet.climate,
+      residents: planet.residents
+    }
+    planetList.push(cleanedPlanet)
+    return planetList
+    }, [])
+    return planetInfo
+  }
+
 
 }

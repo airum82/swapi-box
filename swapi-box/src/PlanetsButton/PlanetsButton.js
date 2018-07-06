@@ -1,8 +1,10 @@
 import React from 'react';
 
-export const PlanetsButton = (props) => {
+export const PlanetsButton = ({ fetchPlanets, retrieveData, cleanPlanetData}) => {
   return (
-    <button>planets</button>
+    <button onClick={() => {
+      fetchPlanets(cleanPlanetData, retrieveData)
+    }}>planets</button>
 
   )
 }

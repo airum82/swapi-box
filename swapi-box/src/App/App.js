@@ -8,6 +8,7 @@ import { VehiclesButton } from '../VehiclesButton/VehiclesButton';
 import { CategoryContainer } from '../CategoryContainer/CategoryContainer';
 import { Card } from '../Card/Card';
 import { helper } from '../helper/helper.js';
+import { apiHelper } from '../Api-call/Api-call.js';
 
 
 class App extends Component {
@@ -15,14 +16,23 @@ class App extends Component {
     super()
     this.state = {
       helper: new helper(),
+      api : new apiHelper(),
       intro: {},
-      category: []
+      people: [],
+      planets: []
 
     }
   }
 
   viewFavorites = () => {
 
+  }
+
+  retrieveData = (data) => {
+    console.log(data)
+    this.setState({
+      planets: data
+    })
   }
 
   retrieveNestedHomeworld = (people) => {
@@ -57,7 +67,7 @@ class App extends Component {
     .then(result => this.state.helper.cleanPeople(result))
     .then(people => this.retrieveNestedHomeworld(people))
     .then(people => this.retreiveNestedSpecies(people))
-    .then(cleanPeople => this.setState({ category: cleanPeople}))
+    .then(cleanPeople => this.setState({ people: cleanPeople}))
   }
 
   componentDidMount() {
@@ -77,9 +87,13 @@ class App extends Component {
           <FavoritesButton viewFavorites={this.viewFavorites}/>
           <hr />
           <PeopleButton viewPeople={this.viewPeople} />
-          <PlanetsButton />
+          <PlanetsButton 
+            fetchPlanets={this.state.api.fetchPlanets}
+            retrieveData={this.retrieveData}
+            cleanPlanetData={this.state.helper.cleanPlanetData}
+          />
           <VehiclesButton />
-          <CategoryContainer category={this.state.category}/>
+          <CategoryContainer category={this.state}/>
         </main>
       </div>
     );
