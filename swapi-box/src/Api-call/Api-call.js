@@ -9,13 +9,13 @@ export class apiHelper {
     .then(response => response.json())
     .then(result => cleanPlanets(result))
     .then(firstResult => this.retrievePlanetResidents(firstResult))
-    .then(cleanedResult => setPlanetInfo(cleanedResult, cleanedResult[0]));
+    .then(cleanedResult => setPlanetInfo(cleanedResult, cleanedResult[0]))
+    .catch(error => console.log(error.message));
   }
 
   retrievePlanetResidents = (planets) => {
     const citizens = planets.map( planet => {    
-        this.fetchResidents(planet.residents).then(names => planet.residents = names)
-        return planet
+        return this.fetchResidents(planet.residents).then(names => ({...planet, residents : names}))
       })
     return Promise.all(citizens);
   }
@@ -24,9 +24,7 @@ export class apiHelper {
     const fetchedResidents = residents.map( resident => {
       return fetch(resident)
              .then(response => response.json())
-             .then(result => {
-              return result.name;
-             })
+             .then(result => result.name)
              .catch(error => console.log(error.message))
           });
     return Promise.all(fetchedResidents);

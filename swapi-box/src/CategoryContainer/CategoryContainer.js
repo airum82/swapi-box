@@ -4,8 +4,8 @@ import './CategoryContainer.css'
 
 export const CategoryContainer = ({ category }) => {
   let categoryCards;
-  if(category.people.length) {
-    categoryCards = category.people.map(item => {
+  if(category.length && Object.keys(category[0]).includes('species')) {
+    categoryCards = category.map(item => {
     return (
       <Card
         name={item.name}
@@ -14,7 +14,18 @@ export const CategoryContainer = ({ category }) => {
         population={item.population}
       />
     )}
-  )}
+  )} else if(category.length && Object.keys(category[0]).includes('residents')) {
+      categoryCards = category.map(item => {
+        return (
+        <Card
+          name={item.name}
+          population={item.population}
+          terrain={item.terrain}
+          climate={item.climate}
+          residents={item.residents}
+        />
+      )}
+    )}
   return (
     <section className="category-container">
     { categoryCards ? categoryCards : ''}

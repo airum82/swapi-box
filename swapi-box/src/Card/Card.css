@@ -1,2 +1,9 @@
 .card {
   padding-bottom: 4%; }
+
+.card button {
+  color: #7a2e2e;
+  background-color: #baa948;
+  padding: 5%;
+  font-size: 1em;
+  border: none; }

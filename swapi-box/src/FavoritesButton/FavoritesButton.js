@@ -3,7 +3,7 @@ import './FavoritesButton.css';
 
 export const FavoritesButton = ({ viewFavorites }) => {
   return (
-    <button onClick={viewFavorites}>
+    <button className="favorites" onClick={viewFavorites}>
       favorites
     </button>
   )

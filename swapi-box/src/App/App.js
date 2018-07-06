@@ -29,7 +29,16 @@ class App extends Component {
 
   }
 
+  resetState = () => {
+    this.setState({
+      people: [],
+      planets: [],
+      vehicles: []
+    })
+  }
+
   retrieveData = (data, sampleItem) => {
+    this.resetState()
     let category;
     if(Object.keys(sampleItem).includes('residents')) {
       category = 'planets';
@@ -74,7 +83,10 @@ class App extends Component {
     .then(result => this.state.helper.cleanPeople(result))
     .then(people => this.retrieveNestedHomeworld(people))
     .then(people => this.retreiveNestedSpecies(people))
-    .then(cleanPeople => this.setState({ people: cleanPeople}))
+    .then(cleanPeople => this.setState({ 
+      people: cleanPeople,
+      planets: [],
+      vehicles: []}))
   }
 
   componentDidMount() {
@@ -86,25 +98,33 @@ class App extends Component {
   }
 
   render() {
+    let category;
+    if(this.state.planets.length) {
+      category = this.state.planets;
+    } else {
+      category = this.state.people;
+    }
     return (
       <div className="App">
         <Intro intro={this.state.intro}/>
         <main className='main'>
           <h1>Swapi-box</h1>
-          <FavoritesButton viewFavorites={this.viewFavorites}/>
           <hr />
-          <PeopleButton viewPeople={this.viewPeople} />
-          <PlanetsButton 
-            fetchPlanets={this.state.api.fetchPlanets}
-            retrieveData={this.retrieveData}
-            cleanPlanetData={this.state.helper.cleanPlanetData}
-          />
-          <VehiclesButton 
-           fetchVehicles={this.state.api.fetchVehicles}
-           cleanVehicles={this.state.helper.cleanVehicles}
-           retrieveVehicles={this.retrieveData} 
-          />
-          <CategoryContainer category={this.state}/>
+          <section className="buttons">
+            <PeopleButton viewPeople={this.viewPeople} />
+            <PlanetsButton 
+              fetchPlanets={this.state.api.fetchPlanets}
+              retrieveData={this.retrieveData}
+              cleanPlanetData={this.state.helper.cleanPlanetData}
+            />
+            <VehiclesButton 
+              fetchVehicles={this.state.api.fetchVehicles}
+              cleanVehicles={this.state.helper.cleanVehicles}
+              retrieveVehicles={this.retrieveData} 
+            />
+            <FavoritesButton viewFavorites={this.viewFavorites}/>
+          </section>
+          <CategoryContainer category={category}/>
         </main>
       </div>
     );
