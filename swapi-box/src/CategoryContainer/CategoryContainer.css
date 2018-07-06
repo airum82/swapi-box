@@ -6,7 +6,8 @@
   justify-content: space-around;
   margin-top: 4%;
   padding: 3% 0;
-  height: 100%; }
+  height: 50%;
+  overflow: scroll; }
 
 .category-container ul {
   list-style-type: none;

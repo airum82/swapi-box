@@ -1,7 +1,8 @@
 .intro {
   background-color: black;
   color: yellow;
-  font-size: 2em; 
+  font-size: 2em;
+  height: 100%;
 }
 
 @-webkit-keyframes scroll {
@@ -22,5 +23,5 @@
 
 .slide-up div {
   display: inline-block;
-  -webkit-animation: scroll 20s infinite linear;
+  -webkit-animation: scroll 25s infinite linear;
 }
