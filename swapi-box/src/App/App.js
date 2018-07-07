@@ -49,11 +49,11 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const url = "https://swapi.co/api/films/";
-    fetch(url)
-    .then(response => response.json())
-    .then(result => this.state.helper.pickFilmIntro(result))
-    .then(intro => this.setState({ intro }))
+    // const url = "https://swapi.co/api/films/";
+    // fetch(url)
+    // .then(response => response.json())
+    // .then(result => this.state.helper.pickFilmIntro(result))
+    // .then(intro => this.setState({ intro }))
   }
 
   render() {

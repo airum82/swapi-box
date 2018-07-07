@@ -3,21 +3,27 @@ export class apiHelper {
 
   }
 
-  viewPeople = (cleanPeople, setStateData) => {
+  viewPeople = (cleanPeople, 
+    setStateData, 
+    retrieveHomeworld, 
+    retrieveSpecies) => {
+    const retrieveNestedHomeworld = retrieveHomeworld || this.retrieveNestedHomeworld
+    const retrieveNestedSpecies = retrieveSpecies || this.retrieveNestedSpecies
     const url = 'https://swapi.co/api/people/';
-    window.fetch(url)
+    fetch(url)
     .then(response => response.json())
     .then(result => cleanPeople(result))
-    .then(people => this.retrieveNestedHomeworld(people))
-    .then(people => this.retreiveNestedSpecies(people))
+    .then(people => retrieveNestedHomeworld(people))
+    .then(people => retrieveNestedSpecies(people))
     .then(cleanPeople => setStateData(cleanPeople, cleanPeople[0]))
-    .catch(error => console.log(error.message))
+    .catch(error => setStateData(error.message))
   }
 
   retrieveNestedHomeworld = (people) => {
+    console.log('homeworld')
     const promiseGroup = people.map( person => {
       return (
-        fetch(person.homeworld)
+        window.fetch(person.homeworld)
         .then(response => response.json())
         .then(result => ({
                           homeworld: result.name,
@@ -29,7 +35,8 @@ export class apiHelper {
     return Promise.all(promiseGroup)
   }
 
-  retreiveNestedSpecies = (people, getSpeciesData) => {
+  retrieveNestedSpecies = (people, getSpeciesData) => {
+    console.log('species')
     const promiseGroup = people.map( person => {
       return (
         fetch(person.species)
@@ -56,7 +63,8 @@ export class apiHelper {
 
   retrievePlanetResidents = (planets) => {
     const citizens = planets.map( planet => {    
-        return this.fetchResidents(planet.residents).then(names => ({...planet, residents : names}))
+        return this.fetchResidents(planet.residents)
+               .then(names => ({...planet, residents : names}))
       })
     return Promise.all(citizens);
   }
