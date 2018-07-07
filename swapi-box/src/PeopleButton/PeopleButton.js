@@ -1,7 +1,9 @@
 import React from 'react';
 
-export const PeopleButton = ({ viewPeople }) => {
+export const PeopleButton = ({ viewPeople, cleanPeople, retrieveData}) => {
   return (
-    <button onClick={viewPeople}>people</button>
+    <button onClick={() => viewPeople(cleanPeople, retrieveData)}>
+      people
+    </button>
   )
 }

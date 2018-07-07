@@ -35,5 +35,18 @@ export const Card = (props) => {
         <button>Favorite</button>
       </div>
     )
+  } else {
+    vehicle = {...props}
+    return (
+      <div className="card">
+        <h2>{vehicle.name}</h2>
+        <ul>
+          <li>{vehicle.model}</li>
+          <li>{vehicle.classType}</li>
+          <li>{vehicle.passengerNumber}</li>
+        </ul>
+        <button>Favorite</button>
+      </div>
+    )
   }
 }
