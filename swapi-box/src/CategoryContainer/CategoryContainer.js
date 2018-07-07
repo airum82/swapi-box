@@ -25,7 +25,18 @@ export const CategoryContainer = ({ category }) => {
           residents={item.residents}
         />
       )}
-    )}
+    )} else if(category.length) {
+        categoryCards = category.map(item => {
+          return (
+            <Card
+              name={item.name}
+              model={item.model}
+              classType={item.classType}
+              passengerNumber={item.passengerNumber}
+            />
+          )
+        })
+      }
   return (
     <section className="category-container">
     { categoryCards ? categoryCards : ''}

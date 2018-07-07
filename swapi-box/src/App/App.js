@@ -64,8 +64,10 @@ class App extends Component {
     let category;
     if(this.state.planets.length) {
       category = this.state.planets;
-    } else {
+    } else if(this.state.people.length) {
       category = this.state.people;
+    } else {
+      category = this.state.vehicles
     }
     return (
       <div className="App">
