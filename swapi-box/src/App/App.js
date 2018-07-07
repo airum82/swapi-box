@@ -25,10 +25,6 @@ class App extends Component {
     }
   }
 
-  viewFavorites = () => {
-
-  }
-
   resetState = () => {
     this.setState({
       people: [],
