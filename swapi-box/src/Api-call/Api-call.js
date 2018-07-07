@@ -5,12 +5,13 @@ export class apiHelper {
 
   viewPeople = (cleanPeople, setStateData) => {
     const url = 'https://swapi.co/api/people/';
-    fetch(url)
+    window.fetch(url)
     .then(response => response.json())
     .then(result => cleanPeople(result))
     .then(people => this.retrieveNestedHomeworld(people))
     .then(people => this.retreiveNestedSpecies(people))
     .then(cleanPeople => setStateData(cleanPeople, cleanPeople[0]))
+    .catch(error => console.log(error.message))
   }
 
   retrieveNestedHomeworld = (people) => {
