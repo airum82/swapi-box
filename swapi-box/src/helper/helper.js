@@ -14,7 +14,7 @@ export class helper {
             }
   }
 
-  cleanPeople = (people, fetchHomeworld) => {
+  cleanPeople = (people) => {
   const starPeople = people.results.map(person => {
       return {
           name: person.name,
@@ -25,22 +25,6 @@ export class helper {
       }
     });
     return starPeople
-  }
-
-  getHomeworldData = (homeworld) => {
-    const homeworldInfo = {
-      homeworld: homeworld.name,
-      population: homeworld.population
-    };
-    return homeworldInfo;
-  }
-
-  getSpeciesData = (species) => {
-    const speciesData = {
-    species: species.name,
-    language: species.language
-    }
-    return speciesData
   }
 
   cleanPlanetData = (planets) => {

@@ -4,6 +4,9 @@
   align-items: center;
   padding-bottom: 4%; }
 
+.card h2 {
+  font-size: 1.5em; }
+
 .card button {
   color: #7a2e2e;
   background-color: #baa948;
