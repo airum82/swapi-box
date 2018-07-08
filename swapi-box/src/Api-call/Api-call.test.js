@@ -26,10 +26,12 @@ describe('Api calls', () => {
 
     it('Should call fetch with correct parameters', () => {
       mockCleanPeople = jest.fn().mockImplementation(() => Promise.resolve({
-        json: () => Promise.resolve(mockPeople)
-      }));
+        json: () => {
+          return Promise.resolve(mockPeople)
+          }
+        })
+      );
       mockSetStateData = jest.fn()
-      //the above should be in a before block
       const expectedApi = 'https://swapi.co/api/people/';
       ApiHelper.viewPeople(mockCleanPeople, mockSetStateData);
 
@@ -37,32 +39,29 @@ describe('Api calls', () => {
     })
 
     it('setStateData should be called with correct params', () => {
-      mockSetStateData = jest.fn().mockImplementation(() => console.log('data'))
-      mockCleanPeople = jest.fn().mockImplementation(
+      mockSetStateData = jest.fn().mockImplementation((a , b) => {
+        return Promise.resolve(mockPeople)
+      })
+        mockCleanPeople = jest.fn().mockImplementation(
         () => {
-          console.log('people')
-          return Promise.resolve(mockPeople)}
-      )
+          return Promise.resolve(mockPeople)
+        })
         ApiHelper.viewPeople(mockCleanPeople, 
                              mockSetStateData,
                              retrieveHomeworld,
                              retrieveSpecies);
         expect.assertions(1)
-        expect(mockSetStateData).toHaveBeenCalledWith(mockPeople);
+        expect(mockSetStateData).toHaveBeenCalled();
     })
 
     it('should receive an error message it fetch block fails', () => {
-      // ApiHelper = new apiHelper();
-      // mockPeople = [{ name: 'Solo', home: 'falcon'}, { name: 'Jimmy', home: 'Detroit'} ]
       mockSetStateData = jest.fn().mockImplementation((error) => error);
       mockCleanPeople = jest.fn().mockImplementation(
         () => {
-          console.log('people')
           return Promise.resolve(mockPeople)}
       )
       window.fetch = jest.fn().mockImplementation(
         () => Promise.reject(new Error('failed')))
-      //the above here should also be in a beforeEach
         ApiHelper.viewPeople(mockCleanPeople, 
                              mockSetStateData,
                              retrieveHomeworld,
@@ -137,8 +136,84 @@ describe('Api calls', () => {
   describe('fetchPlanets', () => {
     let cleanPlanets;
     let setPlanetInfo;
+    let url;
+    let mockCleanPlanets
+    let mockSetPlanetInfo
+    let retrievePlanetResidence;
+    let fetchResidents
     beforeEach(() => {
+      url = 'https://swapi.co/api/planets';
 
+    })
+
+    it('should call fetch with correct parameters', () => {
+      mockCleanPlanets = jest.fn();
+      mockSetPlanetInfo = jest.fn();
+      let mockPlanetInfo = [ { planet: 'Venus'}, { planet: 'Mercury'} ];
+      window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+        json: () => Promise.resolve(mockPlanetInfo)
+      }))
+
+      ApiHelper.fetchPlanets(mockCleanPlanets, mockSetPlanetInfo);
+
+      expect(window.fetch).toHaveBeenCalledWith(url)
+    });
+
+    it('should call cleanPlanets', () => {
+    let mockPlanetInfo = [ { planet: 'Venus'}, { planet: 'Mercury'} ];
+      mockCleanPlanets = jest.fn().mockImplementation((mockPlanetInfo) => {
+        return Promise.resolve(mockPlanetInfo)
+      });
+      window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
+        json: () => Promise.resolve(mockPlanetInfo)
+      }))
+      mockSetPlanetInfo = jest.fn()
+      .mockImplementation((cleanedResult, firstCleaned) => {
+        return;
+      })
+
+      ApiHelper.fetchPlanets(mockCleanPlanets, mockSetPlanetInfo);
+
+      expect(mockCleanPlanets).toHaveBeenCalledWith(mockPlanetInfo);
+    })
+  })
+
+  describe('retrievePlanetResidence', () => {
+    let mockPlanetInfo;
+    let url;
+    beforeEach(() => {
+      mockPlanetInfo = [ { planet: 'Venus', 
+                           residents: [
+                                        "https://swapi.co/api/people/5/",
+                                        "https://swapi.co/api/people/68/",
+                                        "https://swapi.co/api/people/81/"
+                                      ]
+                          }, { planet: 'Mercury',
+                               residents: [
+                                            "https://swapi.co/api/people/5/",
+                                            "https://swapi.co/api/people/68/",
+                                            "https://swapi.co/api/people/81/"
+                                          ]
+                              } 
+                        ];
+      url = "https://swapi.co/api/people/5/";
+    })
+
+    it('should call fetchPlanetResidents with the correct parameters', () => {
+      window.fetch = jest.fn().mockImplementation(() => Promise.resolve(
+        { json : () => Promise.resolve(mockPlanetInfo)
+      }));
+      let mockNestedResidents = [ "https://swapi.co/api/people/5/",
+                              "https://swapi.co/api/people/68/",
+                              "https://swapi.co/api/people/81/" 
+                            ]
+      let mockFetchResidents = jest.fn().mockImplementation(() => {
+        console.log('residents')
+        Promise.resolve(mockNestedResidents)
+      })
+
+      ApiHelper.retrievePlanetResidents(mockPlanetInfo, mockFetchResidents)
+      expect(mockFetchResidents).toHaveBeenCalledWith(mockPlanetInfo.residents)
     })
   })
 })

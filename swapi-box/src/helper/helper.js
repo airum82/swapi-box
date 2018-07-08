@@ -15,6 +15,7 @@ export class helper {
   }
 
   cleanPeople = (people) => {
+    console.log(people)
   const starPeople = people.results.map(person => {
       return {
           name: person.name,

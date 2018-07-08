@@ -18,27 +18,17 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h2>
-          name
-</h2>,
+        <h2 />,
         <ul>
-          <li>
-                    Homeworld
-          </li>
-          <li>
-                    Species
-          </li>
-          <li>
-                    Language
-          </li>
-          <li>
-                    Population of Homeworld
-          </li>
+          <li />
+          <li />
+          <li />
 </ul>,
         <button>
           Favorite
 </button>,
       ],
+      "className": "card",
     },
     "ref": null,
     "rendered": Array [
@@ -47,10 +37,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "name",
+          "children": undefined,
         },
         "ref": null,
-        "rendered": "name",
+        "rendered": null,
         "type": "h2",
       },
       Object {
@@ -59,18 +49,9 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <li>
-              Homeworld
-</li>,
-            <li>
-              Species
-</li>,
-            <li>
-              Language
-</li>,
-            <li>
-              Population of Homeworld
-</li>,
+            <li />,
+            <li />,
+            <li />,
           ],
         },
         "ref": null,
@@ -80,10 +61,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Homeworld",
+              "children": undefined,
             },
             "ref": null,
-            "rendered": "Homeworld",
+            "rendered": null,
             "type": "li",
           },
           Object {
@@ -91,10 +72,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Species",
+              "children": undefined,
             },
             "ref": null,
-            "rendered": "Species",
+            "rendered": null,
             "type": "li",
           },
           Object {
@@ -102,21 +83,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Language",
+              "children": undefined,
             },
             "ref": null,
-            "rendered": "Language",
-            "type": "li",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Population of Homeworld",
-            },
-            "ref": null,
-            "rendered": "Population of Homeworld",
+            "rendered": null,
             "type": "li",
           },
         ],
@@ -143,27 +113,17 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h2>
-            name
-</h2>,
+          <h2 />,
           <ul>
-            <li>
-                        Homeworld
-            </li>
-            <li>
-                        Species
-            </li>
-            <li>
-                        Language
-            </li>
-            <li>
-                        Population of Homeworld
-            </li>
+            <li />
+            <li />
+            <li />
 </ul>,
           <button>
             Favorite
 </button>,
         ],
+        "className": "card",
       },
       "ref": null,
       "rendered": Array [
@@ -172,10 +132,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "name",
+            "children": undefined,
           },
           "ref": null,
-          "rendered": "name",
+          "rendered": null,
           "type": "h2",
         },
         Object {
@@ -184,18 +144,9 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <li>
-                Homeworld
-</li>,
-              <li>
-                Species
-</li>,
-              <li>
-                Language
-</li>,
-              <li>
-                Population of Homeworld
-</li>,
+              <li />,
+              <li />,
+              <li />,
             ],
           },
           "ref": null,
@@ -205,10 +156,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Homeworld",
+                "children": undefined,
               },
               "ref": null,
-              "rendered": "Homeworld",
+              "rendered": null,
               "type": "li",
             },
             Object {
@@ -216,10 +167,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Species",
+                "children": undefined,
               },
               "ref": null,
-              "rendered": "Species",
+              "rendered": null,
               "type": "li",
             },
             Object {
@@ -227,21 +178,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Language",
+                "children": undefined,
               },
               "ref": null,
-              "rendered": "Language",
-              "type": "li",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Population of Homeworld",
-              },
-              "ref": null,
-              "rendered": "Population of Homeworld",
+              "rendered": null,
               "type": "li",
             },
           ],

@@ -7,6 +7,7 @@ export class apiHelper {
     setStateData, 
     retrieveHomeworld, 
     retrieveSpecies) => {
+    console.log('people')
     const retrieveNestedHomeworld = retrieveHomeworld || this.retrieveNestedHomeworld
     const retrieveNestedSpecies = retrieveSpecies || this.retrieveNestedSpecies
     const url = 'https://swapi.co/api/people/';
@@ -30,6 +31,7 @@ export class apiHelper {
                           population: result.population
                         }))
         .then(data => ({...person, ...data}))
+        .catch(error => error.message)
       )
     });
     return Promise.all(promiseGroup)
@@ -46,6 +48,7 @@ export class apiHelper {
                           language: result.language
                         }))
         .then(data => ({...person, ...data}))
+        .catch(error => error.message)
       )
     });
     return Promise.all(promiseGroup)
@@ -61,9 +64,10 @@ export class apiHelper {
     .catch(error => console.log(error.message));
   }
 
-  retrievePlanetResidents = (planets) => {
+  retrievePlanetResidents = (planets, fetchResidents) => {
+    const fetchNestedResidents = fetchResidents || this.fetchResidents;
     const citizens = planets.map( planet => {    
-        return this.fetchResidents(planet.residents)
+        return fetchNestedResidents(planet.residents)
                .then(names => ({...planet, residents : names}))
       })
     return Promise.all(citizens);

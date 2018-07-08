@@ -87,7 +87,7 @@ class App extends Component {
               cleanVehicles={this.state.helper.cleanVehicles}
               retrieveVehicles={this.retrieveData} 
             />
-            <FavoritesButton viewFavorites={this.viewFavorites}/>
+            <FavoritesButton/>
           </section>
           <CategoryContainer category={category}/>
         </main>

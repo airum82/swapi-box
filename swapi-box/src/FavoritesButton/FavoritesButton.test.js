@@ -1,22 +1,22 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import { FavoritesButton } from './FavoritesButton';
 
 describe('FavoritesButton', () => {
   it('Should match snapshot upon render', () => {
     const wrapper = shallow(<FavoritesButton
-                            viewFavorites={jest.fn()}
                             />);
 
     expect(wrapper).toMatchSnapshot();
   })
 
-  it('Should click invoke the viewFavorites function on click', () => {
-    const mockViewFavorites = jest.fn();
+  it('Should invoke the viewFavorites function on click', () => {
     const wrapper = shallow(<FavoritesButton
-                            viewFavorites={mockViewFavorites}
                             />);
-    wrapper.simulate('click');
-    expect(mockViewFavorites).toBeCalled();
+
+    wrapper.viewFavorites = jest.fn();
+
+    wrapper.find('.favorite-button').simulate('click');
+    expect(wrapper.viewFavorites).toHaveBeenCalled();
   })
 })

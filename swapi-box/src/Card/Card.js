@@ -1,5 +1,6 @@
 import React from 'react';
 import './Card.css'
+import PropTypes from 'prop-types';
 
 export const Card = (props) => {
   let person;
@@ -49,4 +50,8 @@ export const Card = (props) => {
       </div>
     )
   }
+}
+
+Card.propTypes = {
+  props: PropTypes.object
 }

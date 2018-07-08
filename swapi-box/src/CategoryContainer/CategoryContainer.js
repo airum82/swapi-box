@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from '../Card/Card';
-import './CategoryContainer.css'
+import './CategoryContainer.css';
+import PropTypes from 'prop-types';
 
 export const CategoryContainer = ({ category }) => {
   let categoryCards;
@@ -42,4 +43,8 @@ export const CategoryContainer = ({ category }) => {
     { categoryCards ? categoryCards : ''}
     </section>
   )
+}
+
+CategoryContainer.propTypes = {
+  category: PropTypes.array
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './FavoritesButton.css';
+import PropTypes from 'prop-types'
 
 export class FavoritesButton extends Component {
   constructor(props) {
@@ -10,6 +11,7 @@ export class FavoritesButton extends Component {
   }
 
   viewFavorites = () => {
+    console.log('favorite')
     
   }
 
