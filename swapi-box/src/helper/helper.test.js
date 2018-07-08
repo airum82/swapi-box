@@ -1,6 +1,7 @@
 import { helper } from './helper';
 import { films } from './sw-film-data';
 import { people, cleanedPeople } from './sw-people-data';
+import { planets, cleanedPlanets } from './sw-planet-data.js';
 
 describe('helper methods', () => {
   let cleaner
@@ -18,8 +19,11 @@ describe('helper methods', () => {
     expect(chosenIntro.intro).toEqual(justIntros.find( intro => intro === chosenIntro.intro));
   })
 
-  it('cleanPeople should return an array of people object', () => {
-    
+  it('cleanPeople should return an array of simplified people objects', () => {
     expect(cleaner.cleanPeople(people)).toEqual(cleanedPeople);
+  })
+
+  it('cleanPlanetData should return an array of simplified planet objects', () => {
+    expect(cleaner.cleanPlanetData(planets)).toEqual(cleanedPlanets);
   })
 })
