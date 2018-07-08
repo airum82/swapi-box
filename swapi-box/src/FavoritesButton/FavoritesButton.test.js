@@ -14,9 +14,9 @@ describe('FavoritesButton', () => {
     const wrapper = shallow(<FavoritesButton
                             />);
 
-    wrapper.viewFavorites = jest.fn();
+    wrapper.instance().viewFavorites = jest.fn();
 
     wrapper.find('.favorite-button').simulate('click');
-    expect(wrapper.viewFavorites).toHaveBeenCalled();
+    expect(wrapper.instance().viewFavorites).toHaveBeenCalled();
   })
 })

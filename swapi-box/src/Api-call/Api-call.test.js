@@ -205,8 +205,7 @@ describe('Api calls', () => {
       }));
       let mockNestedResidents = [ "https://swapi.co/api/people/5/",
                               "https://swapi.co/api/people/68/",
-                              "https://swapi.co/api/people/81/" 
-                            ]
+                              "https://swapi.co/api/people/81/" ]
       let mockFetchResidents = jest.fn().mockImplementation(() => {
         console.log('residents')
         Promise.resolve(mockNestedResidents)
@@ -214,6 +213,26 @@ describe('Api calls', () => {
 
       ApiHelper.retrievePlanetResidents(mockPlanetInfo, mockFetchResidents)
       expect(mockFetchResidents).toHaveBeenCalledWith(mockPlanetInfo.residents)
+    })
+  })
+
+  describe('fetchVehicles', () => {
+
+    it('should call fetch with the correct parameters', () => {
+      window.fetch = jest.fn().mockImplementation(() => Promise.resolve(
+        { json: () => Promise.resolve(mockVehicleInfo)}
+      ));
+      const url = 'https://swapi.co/api/vehicles';
+      const mockVehicleInfo = [ { name : 'dasAuto',
+                                classType: 'yaaaaa'},
+                              { name: 'harley',
+                                classType: 'shortLifespan'}];
+      const mockCleanVehicles = jest.fn().mockImplementation((result) => 'cleaned');
+      const mockSetVehicleState = jest.fn().mockImplementation((data) => 'data');
+      ApiHelper.fetchVehicles(mockCleanVehicles, mockSetVehicleState);
+
+      expect(window.fetch).toHaveBeenCalledWith(url)
+      
     })
   })
 })

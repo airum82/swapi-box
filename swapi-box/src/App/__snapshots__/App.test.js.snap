@@ -1,0 +1,444 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App matches snapshot upon initial render 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Unknown
+          intro={Object {}}
+/>,
+        <main
+          className="main"
+>
+          <h1>
+                    Swapi-box
+          </h1>
+          <hr />
+          <section
+                    className="buttons"
+          >
+                    <Unknown
+                              cleanPeople={[Function]}
+                              retrieveData={[Function]}
+                              viewPeople={[Function]}
+                    />
+                    <Unknown
+                              cleanPlanetData={[Function]}
+                              fetchPlanets={[Function]}
+                              retrieveData={[Function]}
+                    />
+                    <Unknown
+                              cleanVehicles={[Function]}
+                              fetchVehicles={[Function]}
+                              retrieveVehicles={[Function]}
+                    />
+                    <FavoritesButton />
+          </section>
+          <Unknown
+                    category={Array []}
+          />
+</main>,
+      ],
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "intro": Object {},
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Swapi-box
+</h1>,
+            <hr />,
+            <section
+              className="buttons"
+>
+              <Unknown
+                            cleanPeople={[Function]}
+                            retrieveData={[Function]}
+                            viewPeople={[Function]}
+              />
+              <Unknown
+                            cleanPlanetData={[Function]}
+                            fetchPlanets={[Function]}
+                            retrieveData={[Function]}
+              />
+              <Unknown
+                            cleanVehicles={[Function]}
+                            fetchVehicles={[Function]}
+                            retrieveVehicles={[Function]}
+              />
+              <FavoritesButton />
+</section>,
+            <Unknown
+              category={Array []}
+/>,
+          ],
+          "className": "main",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Swapi-box",
+            },
+            "ref": null,
+            "rendered": "Swapi-box",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": "hr",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <Unknown
+                  cleanPeople={[Function]}
+                  retrieveData={[Function]}
+                  viewPeople={[Function]}
+/>,
+                <Unknown
+                  cleanPlanetData={[Function]}
+                  fetchPlanets={[Function]}
+                  retrieveData={[Function]}
+/>,
+                <Unknown
+                  cleanVehicles={[Function]}
+                  fetchVehicles={[Function]}
+                  retrieveVehicles={[Function]}
+/>,
+                <FavoritesButton />,
+              ],
+              "className": "buttons",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "cleanPeople": [Function],
+                  "retrieveData": [Function],
+                  "viewPeople": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "cleanPlanetData": [Function],
+                  "fetchPlanets": [Function],
+                  "retrieveData": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "cleanVehicles": [Function],
+                  "fetchVehicles": [Function],
+                  "retrieveVehicles": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": "section",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "category": Array [],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "main",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Unknown
+            intro={Object {}}
+/>,
+          <main
+            className="main"
+>
+            <h1>
+                        Swapi-box
+            </h1>
+            <hr />
+            <section
+                        className="buttons"
+            >
+                        <Unknown
+                                    cleanPeople={[Function]}
+                                    retrieveData={[Function]}
+                                    viewPeople={[Function]}
+                        />
+                        <Unknown
+                                    cleanPlanetData={[Function]}
+                                    fetchPlanets={[Function]}
+                                    retrieveData={[Function]}
+                        />
+                        <Unknown
+                                    cleanVehicles={[Function]}
+                                    fetchVehicles={[Function]}
+                                    retrieveVehicles={[Function]}
+                        />
+                        <FavoritesButton />
+            </section>
+            <Unknown
+                        category={Array []}
+            />
+</main>,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "intro": Object {},
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                Swapi-box
+</h1>,
+              <hr />,
+              <section
+                className="buttons"
+>
+                <Unknown
+                                cleanPeople={[Function]}
+                                retrieveData={[Function]}
+                                viewPeople={[Function]}
+                />
+                <Unknown
+                                cleanPlanetData={[Function]}
+                                fetchPlanets={[Function]}
+                                retrieveData={[Function]}
+                />
+                <Unknown
+                                cleanVehicles={[Function]}
+                                fetchVehicles={[Function]}
+                                retrieveVehicles={[Function]}
+                />
+                <FavoritesButton />
+</section>,
+              <Unknown
+                category={Array []}
+/>,
+            ],
+            "className": "main",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Swapi-box",
+              },
+              "ref": null,
+              "rendered": "Swapi-box",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "hr",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Unknown
+                    cleanPeople={[Function]}
+                    retrieveData={[Function]}
+                    viewPeople={[Function]}
+/>,
+                  <Unknown
+                    cleanPlanetData={[Function]}
+                    fetchPlanets={[Function]}
+                    retrieveData={[Function]}
+/>,
+                  <Unknown
+                    cleanVehicles={[Function]}
+                    fetchVehicles={[Function]}
+                    retrieveVehicles={[Function]}
+/>,
+                  <FavoritesButton />,
+                ],
+                "className": "buttons",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "cleanPeople": [Function],
+                    "retrieveData": [Function],
+                    "viewPeople": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "cleanPlanetData": [Function],
+                    "fetchPlanets": [Function],
+                    "retrieveData": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "cleanVehicles": [Function],
+                    "fetchVehicles": [Function],
+                    "retrieveVehicles": [Function],
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {},
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+              ],
+              "type": "section",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "category": Array [],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "main",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
