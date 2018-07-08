@@ -29,7 +29,7 @@ export const Card = (props) => {
           <li>{planet.terrain}</li>
           <li>{planet.population}</li>
           <li>{planet.climate}</li>
-          { planet.residents.includes('http') ? '' : planet.residents.map(resident => {
+          { !planet.residents.length ? '' : planet.residents.map(resident => {
             return <li>{resident}</li>
           }) }
         </ul>

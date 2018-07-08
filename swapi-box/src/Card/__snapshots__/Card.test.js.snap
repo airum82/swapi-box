@@ -211,3 +211,849 @@ ShallowWrapper {
   },
 }
 `;
+
+exports[`Card component Should match snapshot when prop object has a key of terrain 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    climate="desert"
+    name="Galafrey"
+    population="varies"
+    residents={
+        Array [
+            "timelords",
+            "galafreyins",
+          ]
+    }
+    terrain="mountainous"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          Galafrey
+</h2>,
+        <ul>
+          <li>
+                    mountainous
+          </li>
+          <li>
+                    varies
+          </li>
+          <li>
+                    desert
+          </li>
+          <li>
+                    timelords
+          </li>
+          <li>
+                    galafreyins
+          </li>
+</ul>,
+        <button>
+          Favorite
+</button>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Galafrey",
+        },
+        "ref": null,
+        "rendered": "Galafrey",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              mountainous
+</li>,
+            <li>
+              varies
+</li>,
+            <li>
+              desert
+</li>,
+            Array [
+              <li>
+                timelords
+</li>,
+              <li>
+                galafreyins
+</li>,
+            ],
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "mountainous",
+            },
+            "ref": null,
+            "rendered": "mountainous",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "varies",
+            },
+            "ref": null,
+            "rendered": "varies",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "desert",
+            },
+            "ref": null,
+            "rendered": "desert",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "timelords",
+            },
+            "ref": null,
+            "rendered": "timelords",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "galafreyins",
+            },
+            "ref": null,
+            "rendered": "galafreyins",
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Favorite",
+        },
+        "ref": null,
+        "rendered": "Favorite",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            Galafrey
+</h2>,
+          <ul>
+            <li>
+                        mountainous
+            </li>
+            <li>
+                        varies
+            </li>
+            <li>
+                        desert
+            </li>
+            <li>
+                        timelords
+            </li>
+            <li>
+                        galafreyins
+            </li>
+</ul>,
+          <button>
+            Favorite
+</button>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Galafrey",
+          },
+          "ref": null,
+          "rendered": "Galafrey",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                mountainous
+</li>,
+              <li>
+                varies
+</li>,
+              <li>
+                desert
+</li>,
+              Array [
+                <li>
+                  timelords
+</li>,
+                <li>
+                  galafreyins
+</li>,
+              ],
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "mountainous",
+              },
+              "ref": null,
+              "rendered": "mountainous",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "varies",
+              },
+              "ref": null,
+              "rendered": "varies",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "desert",
+              },
+              "ref": null,
+              "rendered": "desert",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "timelords",
+              },
+              "ref": null,
+              "rendered": "timelords",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "galafreyins",
+              },
+              "ref": null,
+              "rendered": "galafreyins",
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Favorite",
+          },
+          "ref": null,
+          "rendered": "Favorite",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Card component Should match snapshot when prop object has a key of terrain but no residents 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    climate="desert"
+    name="Galafrey"
+    population="varies"
+    residents={Array []}
+    terrain="mountainous"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          Galafrey
+</h2>,
+        <ul>
+          <li>
+                    mountainous
+          </li>
+          <li>
+                    varies
+          </li>
+          <li>
+                    desert
+          </li>
+          
+</ul>,
+        <button>
+          Favorite
+</button>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Galafrey",
+        },
+        "ref": null,
+        "rendered": "Galafrey",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li>
+              mountainous
+</li>,
+            <li>
+              varies
+</li>,
+            <li>
+              desert
+</li>,
+            "",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "mountainous",
+            },
+            "ref": null,
+            "rendered": "mountainous",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "varies",
+            },
+            "ref": null,
+            "rendered": "varies",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "desert",
+            },
+            "ref": null,
+            "rendered": "desert",
+            "type": "li",
+          },
+          "",
+        ],
+        "type": "ul",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Favorite",
+        },
+        "ref": null,
+        "rendered": "Favorite",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            Galafrey
+</h2>,
+          <ul>
+            <li>
+                        mountainous
+            </li>
+            <li>
+                        varies
+            </li>
+            <li>
+                        desert
+            </li>
+            
+</ul>,
+          <button>
+            Favorite
+</button>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Galafrey",
+          },
+          "ref": null,
+          "rendered": "Galafrey",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li>
+                mountainous
+</li>,
+              <li>
+                varies
+</li>,
+              <li>
+                desert
+</li>,
+              "",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "mountainous",
+              },
+              "ref": null,
+              "rendered": "mountainous",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "varies",
+              },
+              "ref": null,
+              "rendered": "varies",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "desert",
+              },
+              "ref": null,
+              "rendered": "desert",
+              "type": "li",
+            },
+            "",
+          ],
+          "type": "ul",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Favorite",
+          },
+          "ref": null,
+          "rendered": "Favorite",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Card component Should match snapshot when prop object has key of species 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    language="telepathy"
+    name="Bob"
+    population="lots"
+    species="Ood"
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h2>
+          Bob
+</h2>,
+        <ul>
+          <li />
+          <li>
+                    Ood
+          </li>
+          <li>
+                    telepathy
+          </li>
+          <li>
+                    lots
+          </li>
+</ul>,
+        <button>
+          Favorite
+</button>,
+      ],
+      "className": "card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Bob",
+        },
+        "ref": null,
+        "rendered": "Bob",
+        "type": "h2",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li />,
+            <li>
+              Ood
+</li>,
+            <li>
+              telepathy
+</li>,
+            <li>
+              lots
+</li>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Ood",
+            },
+            "ref": null,
+            "rendered": "Ood",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "telepathy",
+            },
+            "ref": null,
+            "rendered": "telepathy",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "lots",
+            },
+            "ref": null,
+            "rendered": "lots",
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Favorite",
+        },
+        "ref": null,
+        "rendered": "Favorite",
+        "type": "button",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h2>
+            Bob
+</h2>,
+          <ul>
+            <li />
+            <li>
+                        Ood
+            </li>
+            <li>
+                        telepathy
+            </li>
+            <li>
+                        lots
+            </li>
+</ul>,
+          <button>
+            Favorite
+</button>,
+        ],
+        "className": "card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Bob",
+          },
+          "ref": null,
+          "rendered": "Bob",
+          "type": "h2",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li />,
+              <li>
+                Ood
+</li>,
+              <li>
+                telepathy
+</li>,
+              <li>
+                lots
+</li>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Ood",
+              },
+              "ref": null,
+              "rendered": "Ood",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "telepathy",
+              },
+              "ref": null,
+              "rendered": "telepathy",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "lots",
+              },
+              "ref": null,
+              "rendered": "lots",
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Favorite",
+          },
+          "ref": null,
+          "rendered": "Favorite",
+          "type": "button",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
