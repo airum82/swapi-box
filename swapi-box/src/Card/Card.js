@@ -12,25 +12,27 @@ export const Card = (props) => {
       <div className="card">
         <h2>{person.name}</h2>
         <ul>
-          <li>{person.homeworld}</li>
-          <li>{person.species}</li>
-          <li>{person.language}</li>
-          <li>{person.population}</li>
+          <li>Homeworld:{person.homeworld}</li>
+          <li>Species:{person.species}</li>
+          <li>Language:{person.language}</li>
+          <li>Population:{person.population}</li>
         </ul>
         <button>Favorite</button>
       </div>
     )
   } else if(Object.keys(props).includes('terrain')) {
     planet = {...props};
+    let keyId = 0;
     return (
       <div className="card">
         <h2>{planet.name}</h2>
         <ul>
-          <li>{planet.terrain}</li>
-          <li>{planet.population}</li>
-          <li>{planet.climate}</li>
+          <li>Terrain:{planet.terrain}</li>
+          <li>Population:{planet.population}</li>
+          <li>Climate:{planet.climate}</li>
+          <li>{planet.residents.length ? 'Residents:' : ''}</li>
           { !planet.residents.length ? '' : planet.residents.map(resident => {
-            return <li>{resident}</li>
+            return <li key={keyId++}>{resident}</li>
           }) }
         </ul>
         <button>Favorite</button>
@@ -40,11 +42,11 @@ export const Card = (props) => {
     vehicle = {...props}
     return (
       <div className="card">
-        <h2>{vehicle.name}</h2>
+        <h2>Name:{vehicle.name}</h2>
         <ul>
-          <li>{vehicle.model}</li>
-          <li>{vehicle.classType}</li>
-          <li>{vehicle.passengerNumber}</li>
+          <li>Model:{vehicle.model}</li>
+          <li>Class Type:{vehicle.classType}</li>
+          <li>Passenger Number:{vehicle.passengerNumber}</li>
         </ul>
         <button>Favorite</button>
       </div>

@@ -3,11 +3,18 @@ export class apiHelper {
 
   }
 
+  fetchIntros = (pickFilmIntro, retrieveData) => {
+  const url = "https://swapi.co/api/films/";
+    fetch(url)
+    .then(response => response.json())
+    .then(result => pickFilmIntro(result))
+    .then(intro => retrieveData(intro, intro))
+  }
+
   viewPeople = (cleanPeople, 
     setStateData, 
     retrieveHomeworld, 
     retrieveSpecies) => {
-    console.log('people')
     const retrieveNestedHomeworld = retrieveHomeworld || this.retrieveNestedHomeworld
     const retrieveNestedSpecies = retrieveSpecies || this.retrieveNestedSpecies
     const url = 'https://swapi.co/api/people/';
@@ -21,7 +28,6 @@ export class apiHelper {
   }
 
   retrieveNestedHomeworld = (people) => {
-    console.log('homeworld')
     const promiseGroup = people.map( person => {
       return (
         window.fetch(person.homeworld)
@@ -37,8 +43,7 @@ export class apiHelper {
     return Promise.all(promiseGroup)
   }
 
-  retrieveNestedSpecies = (people, getSpeciesData) => {
-    console.log('species')
+  retrieveNestedSpecies = (people) => {
     const promiseGroup = people.map( person => {
       return (
         fetch(person.species)

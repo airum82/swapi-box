@@ -40,6 +40,8 @@ class App extends Component {
       category = 'planets';
     } else if(Object.keys(sampleItem).includes('model')) {
       category = 'vehicles';
+    } else if(Object.keys(sampleItem).includes('intro')) {
+      category = 'intro';
     } else {
       category = 'people'
     }
@@ -49,11 +51,8 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // const url = "https://swapi.co/api/films/";
-    // fetch(url)
-    // .then(response => response.json())
-    // .then(result => this.state.helper.pickFilmIntro(result))
-    // .then(intro => this.setState({ intro }))
+    this.state.api.fetchIntros(this.state.helper.pickFilmIntro,
+                               this.retrieveData)
   }
 
   render() {
