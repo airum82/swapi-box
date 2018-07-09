@@ -33,8 +33,7 @@ class App extends Component {
     })
   }
 
-  retrieveData = (data, sampleItem) => {
-    this.resetState()
+  determineCategory = (sampleItem) => {
     let category;
     if(Object.keys(sampleItem).includes('residents')) {
       category = 'planets';
@@ -45,14 +44,34 @@ class App extends Component {
     } else {
       category = 'people'
     }
+    return category
+  }
+
+  retrieveData = (data, sampleItem) => {
+    this.resetState()
+    const category = this.determineCategory(sampleItem)
     this.setState({
       [category]: data
     })
   }
 
+  favoriteCard = (props) => {
+    const category = this.determineCategory(props);
+    const newFavorite = this.state[category].map(item => {
+      if(item.name === props.name) {
+        return {...item, favorite: true}
+      } else {
+        return item;
+      }
+    });
+    this.setState({ 
+      [category]: newFavorite 
+    })
+  }
+
   componentDidMount() {
-    this.state.api.fetchIntros(this.state.helper.pickFilmIntro,
-                               this.retrieveData)
+    // this.state.api.fetchIntros(this.state.helper.pickFilmIntro,
+                               // this.retrieveData)
   }
 
   render() {
@@ -86,9 +105,12 @@ class App extends Component {
               cleanVehicles={this.state.helper.cleanVehicles}
               retrieveVehicles={this.retrieveData} 
             />
-            <FavoritesButton/>
+            <FavoritesButton />
           </section>
-          <CategoryContainer category={category}/>
+          <CategoryContainer 
+            category={category}
+            favoriteCard={this.favoriteCard}
+          />
         </main>
       </div>
     );

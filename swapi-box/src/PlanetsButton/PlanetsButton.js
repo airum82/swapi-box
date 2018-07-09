@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const PlanetsButton = ({ fetchPlanets, retrieveData, cleanPlanetData}) => {
   return (
@@ -7,4 +8,10 @@ export const PlanetsButton = ({ fetchPlanets, retrieveData, cleanPlanetData}) =>
     }}>planets</button>
 
   )
+}
+
+PlanetsButton.propTypes = {
+  fetchPlanets: PropTypes.func,
+  retrieveData: PropTypes.func,
+  cleanPlanetData: PropTypes.func
 }

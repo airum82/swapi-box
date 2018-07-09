@@ -50,6 +50,7 @@ ShallowWrapper {
           </section>
           <Unknown
                     category={Array []}
+                    favoriteCard={[Function]}
           />
 </main>,
       ],
@@ -100,6 +101,7 @@ ShallowWrapper {
 </section>,
             <Unknown
               category={Array []}
+              favoriteCard={[Function]}
 />,
           ],
           "className": "main",
@@ -210,6 +212,7 @@ ShallowWrapper {
             "nodeType": "function",
             "props": Object {
               "category": Array [],
+              "favoriteCard": [Function],
             },
             "ref": null,
             "rendered": null,
@@ -260,6 +263,7 @@ ShallowWrapper {
             </section>
             <Unknown
                         category={Array []}
+                        favoriteCard={[Function]}
             />
 </main>,
         ],
@@ -310,6 +314,7 @@ ShallowWrapper {
 </section>,
               <Unknown
                 category={Array []}
+                favoriteCard={[Function]}
 />,
             ],
             "className": "main",
@@ -420,6 +425,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "category": Array [],
+                "favoriteCard": [Function],
               },
               "ref": null,
               "rendered": null,

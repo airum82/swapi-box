@@ -37,7 +37,6 @@ describe('Card component', () => {
                               climate={mockPlanet.climate}
                               residents={mockPlanet.residents}
                             />);
-    console.log(wrapper.debug())
     expect(wrapper).toMatchSnapshot();
   })
 

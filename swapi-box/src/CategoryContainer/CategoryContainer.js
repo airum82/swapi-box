@@ -4,12 +4,13 @@ import './CategoryContainer.css';
 import PropTypes from 'prop-types';
 
 let keyId = 0
-export const CategoryContainer = ({ category }) => {
+export const CategoryContainer = ({ category, favoriteCard }) => {
   let categoryCards;
   if(category.length && Object.keys(category[0]).includes('species')) {
     categoryCards = category.map(item => {
     return (
       <Card
+        favoriteCard={favoriteCard}
         key={keyId++}
         name={item.name}
         homeworld={item.homeworld}
@@ -22,6 +23,7 @@ export const CategoryContainer = ({ category }) => {
       categoryCards = category.map(item => {
         return (
         <Card
+          favoriteCard={favoriteCard}
           key={keyId++}
           name={item.name}
           population={item.population}
@@ -35,6 +37,7 @@ export const CategoryContainer = ({ category }) => {
           keyId++
           return (
             <Card
+              favoriteCard={favoriteCard}
               key={keyId++}
               name={item.name}
               model={item.model}
@@ -52,5 +55,6 @@ export const CategoryContainer = ({ category }) => {
 }
 
 CategoryContainer.propTypes = {
-  category: PropTypes.array
+  category: PropTypes.array,
+  favoriteCard: PropTypes.func
 }

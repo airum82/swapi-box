@@ -34,6 +34,10 @@ describe('App', () => {
     wrapper.instance().retrieveData(mockData, mockData[0]);
     expect(wrapper.instance().resetState).toHaveBeenCalled();
   })
+
+  it('retriveData should call determineCategory', () => {
+    const wrapper = shallow(<App />)
+  })
   
 })
 

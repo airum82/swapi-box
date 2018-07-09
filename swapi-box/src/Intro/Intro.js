@@ -1,5 +1,6 @@
 import React from 'react';
 import './Intro.css';
+import PropTypes from 'prop-types';
 
 export const Intro = ({ intro }) => {
   return (
@@ -11,4 +12,8 @@ export const Intro = ({ intro }) => {
       </div>
     </aside>
   )
+}
+
+Intro.propTypes = {
+  intro: PropTypes.object
 }

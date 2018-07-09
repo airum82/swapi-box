@@ -18,13 +18,23 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h2 />,
+        <h2>
+          Name:
+</h2>,
         <ul>
-          <li />
-          <li />
-          <li />
+          <li>
+                    Model:
+          </li>
+          <li>
+                    Class Type:
+          </li>
+          <li>
+                    Passenger Number:
+          </li>
 </ul>,
-        <button>
+        <button
+          onClick={[Function]}
+>
           Favorite
 </button>,
       ],
@@ -37,10 +47,16 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": Array [
+            "Name:",
+            undefined,
+          ],
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          "Name:",
+          undefined,
+        ],
         "type": "h2",
       },
       Object {
@@ -49,9 +65,15 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <li />,
-            <li />,
-            <li />,
+            <li>
+              Model:
+</li>,
+            <li>
+              Class Type:
+</li>,
+            <li>
+              Passenger Number:
+</li>,
           ],
         },
         "ref": null,
@@ -61,10 +83,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
+              "children": Array [
+                "Model:",
+                undefined,
+              ],
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              "Model:",
+              undefined,
+            ],
             "type": "li",
           },
           Object {
@@ -72,10 +100,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
+              "children": Array [
+                "Class Type:",
+                undefined,
+              ],
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              "Class Type:",
+              undefined,
+            ],
             "type": "li",
           },
           Object {
@@ -83,10 +117,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
+              "children": Array [
+                "Passenger Number:",
+                undefined,
+              ],
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              "Passenger Number:",
+              undefined,
+            ],
             "type": "li",
           },
         ],
@@ -98,6 +138,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Favorite",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "Favorite",
@@ -113,13 +154,23 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h2 />,
+          <h2>
+            Name:
+</h2>,
           <ul>
-            <li />
-            <li />
-            <li />
+            <li>
+                        Model:
+            </li>
+            <li>
+                        Class Type:
+            </li>
+            <li>
+                        Passenger Number:
+            </li>
 </ul>,
-          <button>
+          <button
+            onClick={[Function]}
+>
             Favorite
 </button>,
         ],
@@ -132,10 +183,16 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": Array [
+              "Name:",
+              undefined,
+            ],
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            "Name:",
+            undefined,
+          ],
           "type": "h2",
         },
         Object {
@@ -144,9 +201,15 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <li />,
-              <li />,
-              <li />,
+              <li>
+                Model:
+</li>,
+              <li>
+                Class Type:
+</li>,
+              <li>
+                Passenger Number:
+</li>,
             ],
           },
           "ref": null,
@@ -156,10 +219,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": undefined,
+                "children": Array [
+                  "Model:",
+                  undefined,
+                ],
               },
               "ref": null,
-              "rendered": null,
+              "rendered": Array [
+                "Model:",
+                undefined,
+              ],
               "type": "li",
             },
             Object {
@@ -167,10 +236,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": undefined,
+                "children": Array [
+                  "Class Type:",
+                  undefined,
+                ],
               },
               "ref": null,
-              "rendered": null,
+              "rendered": Array [
+                "Class Type:",
+                undefined,
+              ],
               "type": "li",
             },
             Object {
@@ -178,10 +253,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": undefined,
+                "children": Array [
+                  "Passenger Number:",
+                  undefined,
+                ],
               },
               "ref": null,
-              "rendered": null,
+              "rendered": Array [
+                "Passenger Number:",
+                undefined,
+              ],
               "type": "li",
             },
           ],
@@ -193,6 +274,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Favorite",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "Favorite",
@@ -246,13 +328,19 @@ ShallowWrapper {
 </h2>,
         <ul>
           <li>
+                    Terrain:
                     mountainous
           </li>
           <li>
+                    Population:
                     varies
           </li>
           <li>
+                    Climate:
                     desert
+          </li>
+          <li>
+                    Residents:
           </li>
           <li>
                     timelords
@@ -261,7 +349,9 @@ ShallowWrapper {
                     galafreyins
           </li>
 </ul>,
-        <button>
+        <button
+          onClick={[Function]}
+>
           Favorite
 </button>,
       ],
@@ -287,13 +377,19 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <li>
+              Terrain:
               mountainous
 </li>,
             <li>
+              Population:
               varies
 </li>,
             <li>
+              Climate:
               desert
+</li>,
+            <li>
+              Residents:
 </li>,
             Array [
               <li>
@@ -312,10 +408,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "mountainous",
+              "children": Array [
+                "Terrain:",
+                "mountainous",
+              ],
             },
             "ref": null,
-            "rendered": "mountainous",
+            "rendered": Array [
+              "Terrain:",
+              "mountainous",
+            ],
             "type": "li",
           },
           Object {
@@ -323,10 +425,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "varies",
+              "children": Array [
+                "Population:",
+                "varies",
+              ],
             },
             "ref": null,
-            "rendered": "varies",
+            "rendered": Array [
+              "Population:",
+              "varies",
+            ],
             "type": "li",
           },
           Object {
@@ -334,15 +442,32 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "desert",
+              "children": Array [
+                "Climate:",
+                "desert",
+              ],
             },
             "ref": null,
-            "rendered": "desert",
+            "rendered": Array [
+              "Climate:",
+              "desert",
+            ],
             "type": "li",
           },
           Object {
             "instance": null,
             "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Residents:",
+            },
+            "ref": null,
+            "rendered": "Residents:",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": "0",
             "nodeType": "host",
             "props": Object {
               "children": "timelords",
@@ -353,7 +478,7 @@ ShallowWrapper {
           },
           Object {
             "instance": null,
-            "key": undefined,
+            "key": "1",
             "nodeType": "host",
             "props": Object {
               "children": "galafreyins",
@@ -371,6 +496,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Favorite",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "Favorite",
@@ -391,13 +517,19 @@ ShallowWrapper {
 </h2>,
           <ul>
             <li>
+                        Terrain:
                         mountainous
             </li>
             <li>
+                        Population:
                         varies
             </li>
             <li>
+                        Climate:
                         desert
+            </li>
+            <li>
+                        Residents:
             </li>
             <li>
                         timelords
@@ -406,7 +538,9 @@ ShallowWrapper {
                         galafreyins
             </li>
 </ul>,
-          <button>
+          <button
+            onClick={[Function]}
+>
             Favorite
 </button>,
         ],
@@ -432,13 +566,19 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <li>
+                Terrain:
                 mountainous
 </li>,
               <li>
+                Population:
                 varies
 </li>,
               <li>
+                Climate:
                 desert
+</li>,
+              <li>
+                Residents:
 </li>,
               Array [
                 <li>
@@ -457,10 +597,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "mountainous",
+                "children": Array [
+                  "Terrain:",
+                  "mountainous",
+                ],
               },
               "ref": null,
-              "rendered": "mountainous",
+              "rendered": Array [
+                "Terrain:",
+                "mountainous",
+              ],
               "type": "li",
             },
             Object {
@@ -468,10 +614,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "varies",
+                "children": Array [
+                  "Population:",
+                  "varies",
+                ],
               },
               "ref": null,
-              "rendered": "varies",
+              "rendered": Array [
+                "Population:",
+                "varies",
+              ],
               "type": "li",
             },
             Object {
@@ -479,15 +631,32 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "desert",
+                "children": Array [
+                  "Climate:",
+                  "desert",
+                ],
               },
               "ref": null,
-              "rendered": "desert",
+              "rendered": Array [
+                "Climate:",
+                "desert",
+              ],
               "type": "li",
             },
             Object {
               "instance": null,
               "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Residents:",
+              },
+              "ref": null,
+              "rendered": "Residents:",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": "0",
               "nodeType": "host",
               "props": Object {
                 "children": "timelords",
@@ -498,7 +667,7 @@ ShallowWrapper {
             },
             Object {
               "instance": null,
-              "key": undefined,
+              "key": "1",
               "nodeType": "host",
               "props": Object {
                 "children": "galafreyins",
@@ -516,6 +685,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Favorite",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "Favorite",
@@ -564,17 +734,23 @@ ShallowWrapper {
 </h2>,
         <ul>
           <li>
+                    Terrain:
                     mountainous
           </li>
           <li>
+                    Population:
                     varies
           </li>
           <li>
+                    Climate:
                     desert
           </li>
+          <li />
           
 </ul>,
-        <button>
+        <button
+          onClick={[Function]}
+>
           Favorite
 </button>,
       ],
@@ -600,14 +776,18 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <li>
+              Terrain:
               mountainous
 </li>,
             <li>
+              Population:
               varies
 </li>,
             <li>
+              Climate:
               desert
 </li>,
+            <li />,
             "",
           ],
         },
@@ -618,10 +798,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "mountainous",
+              "children": Array [
+                "Terrain:",
+                "mountainous",
+              ],
             },
             "ref": null,
-            "rendered": "mountainous",
+            "rendered": Array [
+              "Terrain:",
+              "mountainous",
+            ],
             "type": "li",
           },
           Object {
@@ -629,10 +815,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "varies",
+              "children": Array [
+                "Population:",
+                "varies",
+              ],
             },
             "ref": null,
-            "rendered": "varies",
+            "rendered": Array [
+              "Population:",
+              "varies",
+            ],
             "type": "li",
           },
           Object {
@@ -640,10 +832,27 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "desert",
+              "children": Array [
+                "Climate:",
+                "desert",
+              ],
             },
             "ref": null,
-            "rendered": "desert",
+            "rendered": Array [
+              "Climate:",
+              "desert",
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "",
+            },
+            "ref": null,
+            "rendered": "",
             "type": "li",
           },
           "",
@@ -656,6 +865,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Favorite",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "Favorite",
@@ -676,17 +886,23 @@ ShallowWrapper {
 </h2>,
           <ul>
             <li>
+                        Terrain:
                         mountainous
             </li>
             <li>
+                        Population:
                         varies
             </li>
             <li>
+                        Climate:
                         desert
             </li>
+            <li />
             
 </ul>,
-          <button>
+          <button
+            onClick={[Function]}
+>
             Favorite
 </button>,
         ],
@@ -712,14 +928,18 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <li>
+                Terrain:
                 mountainous
 </li>,
               <li>
+                Population:
                 varies
 </li>,
               <li>
+                Climate:
                 desert
 </li>,
+              <li />,
               "",
             ],
           },
@@ -730,10 +950,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "mountainous",
+                "children": Array [
+                  "Terrain:",
+                  "mountainous",
+                ],
               },
               "ref": null,
-              "rendered": "mountainous",
+              "rendered": Array [
+                "Terrain:",
+                "mountainous",
+              ],
               "type": "li",
             },
             Object {
@@ -741,10 +967,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "varies",
+                "children": Array [
+                  "Population:",
+                  "varies",
+                ],
               },
               "ref": null,
-              "rendered": "varies",
+              "rendered": Array [
+                "Population:",
+                "varies",
+              ],
               "type": "li",
             },
             Object {
@@ -752,10 +984,27 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "desert",
+                "children": Array [
+                  "Climate:",
+                  "desert",
+                ],
               },
               "ref": null,
-              "rendered": "desert",
+              "rendered": Array [
+                "Climate:",
+                "desert",
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "",
+              },
+              "ref": null,
+              "rendered": "",
               "type": "li",
             },
             "",
@@ -768,6 +1017,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Favorite",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "Favorite",
@@ -814,18 +1064,25 @@ ShallowWrapper {
           Bob
 </h2>,
         <ul>
-          <li />
           <li>
+                    Homeworld:
+          </li>
+          <li>
+                    Species:
                     Ood
           </li>
           <li>
+                    Language:
                     telepathy
           </li>
           <li>
+                    Population:
                     lots
           </li>
 </ul>,
-        <button>
+        <button
+          onClick={[Function]}
+>
           Favorite
 </button>,
       ],
@@ -850,14 +1107,19 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <li />,
             <li>
+              Homeworld:
+</li>,
+            <li>
+              Species:
               Ood
 </li>,
             <li>
+              Language:
               telepathy
 </li>,
             <li>
+              Population:
               lots
 </li>,
           ],
@@ -869,10 +1131,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": undefined,
+              "children": Array [
+                "Homeworld:",
+                undefined,
+              ],
             },
             "ref": null,
-            "rendered": null,
+            "rendered": Array [
+              "Homeworld:",
+              undefined,
+            ],
             "type": "li",
           },
           Object {
@@ -880,10 +1148,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Ood",
+              "children": Array [
+                "Species:",
+                "Ood",
+              ],
             },
             "ref": null,
-            "rendered": "Ood",
+            "rendered": Array [
+              "Species:",
+              "Ood",
+            ],
             "type": "li",
           },
           Object {
@@ -891,10 +1165,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "telepathy",
+              "children": Array [
+                "Language:",
+                "telepathy",
+              ],
             },
             "ref": null,
-            "rendered": "telepathy",
+            "rendered": Array [
+              "Language:",
+              "telepathy",
+            ],
             "type": "li",
           },
           Object {
@@ -902,10 +1182,16 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "lots",
+              "children": Array [
+                "Population:",
+                "lots",
+              ],
             },
             "ref": null,
-            "rendered": "lots",
+            "rendered": Array [
+              "Population:",
+              "lots",
+            ],
             "type": "li",
           },
         ],
@@ -917,6 +1203,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Favorite",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": "Favorite",
@@ -936,18 +1223,25 @@ ShallowWrapper {
             Bob
 </h2>,
           <ul>
-            <li />
             <li>
+                        Homeworld:
+            </li>
+            <li>
+                        Species:
                         Ood
             </li>
             <li>
+                        Language:
                         telepathy
             </li>
             <li>
+                        Population:
                         lots
             </li>
 </ul>,
-          <button>
+          <button
+            onClick={[Function]}
+>
             Favorite
 </button>,
         ],
@@ -972,14 +1266,19 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <li />,
               <li>
+                Homeworld:
+</li>,
+              <li>
+                Species:
                 Ood
 </li>,
               <li>
+                Language:
                 telepathy
 </li>,
               <li>
+                Population:
                 lots
 </li>,
             ],
@@ -991,10 +1290,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": undefined,
+                "children": Array [
+                  "Homeworld:",
+                  undefined,
+                ],
               },
               "ref": null,
-              "rendered": null,
+              "rendered": Array [
+                "Homeworld:",
+                undefined,
+              ],
               "type": "li",
             },
             Object {
@@ -1002,10 +1307,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Ood",
+                "children": Array [
+                  "Species:",
+                  "Ood",
+                ],
               },
               "ref": null,
-              "rendered": "Ood",
+              "rendered": Array [
+                "Species:",
+                "Ood",
+              ],
               "type": "li",
             },
             Object {
@@ -1013,10 +1324,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "telepathy",
+                "children": Array [
+                  "Language:",
+                  "telepathy",
+                ],
               },
               "ref": null,
-              "rendered": "telepathy",
+              "rendered": Array [
+                "Language:",
+                "telepathy",
+              ],
               "type": "li",
             },
             Object {
@@ -1024,10 +1341,16 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "lots",
+                "children": Array [
+                  "Population:",
+                  "lots",
+                ],
               },
               "ref": null,
-              "rendered": "lots",
+              "rendered": Array [
+                "Population:",
+                "lots",
+              ],
               "type": "li",
             },
           ],
@@ -1039,6 +1362,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Favorite",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": "Favorite",

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export const VehiclesButton = ({ fetchVehicles, cleanVehicles, retrieveVehicles }) => {
   return (
@@ -7,3 +8,10 @@ export const VehiclesButton = ({ fetchVehicles, cleanVehicles, retrieveVehicles 
 
   )
 }
+
+VehiclesButton.propTypes = {
+  fetchVehicles: PropTypes.func,
+  cleanVehicles: PropTypes.func,
+  retrieveVehicles: PropTypes.func
+}
+

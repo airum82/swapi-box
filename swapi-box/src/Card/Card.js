@@ -17,7 +17,9 @@ export const Card = (props) => {
           <li>Language:{person.language}</li>
           <li>Population:{person.population}</li>
         </ul>
-        <button>Favorite</button>
+        <button onClick={() => person.favoriteCard(person)}>
+          Favorite
+        </button>
       </div>
     )
   } else if(Object.keys(props).includes('terrain')) {
@@ -35,7 +37,9 @@ export const Card = (props) => {
             return <li key={keyId++}>{resident}</li>
           }) }
         </ul>
-        <button>Favorite</button>
+        <button onClick={() => planet.favoriteCard(planet)}>
+          Favorite
+        </button>
       </div>
     )
   } else {
@@ -48,7 +52,9 @@ export const Card = (props) => {
           <li>Class Type:{vehicle.classType}</li>
           <li>Passenger Number:{vehicle.passengerNumber}</li>
         </ul>
-        <button>Favorite</button>
+        <button onClick={() => vehicle.favoriteCard(vehicle)}>
+          Favorite
+        </button>
       </div>
     )
   }

@@ -81,12 +81,14 @@ ShallowWrapper {
       "children": Array [
         <Unknown
           classType={undefined}
+          favoriteCard={undefined}
           model={undefined}
           name={undefined}
           passengerNumber={undefined}
 />,
         <Unknown
           classType={undefined}
+          favoriteCard={undefined}
           model={undefined}
           name={undefined}
           passengerNumber={undefined}
@@ -98,10 +100,11 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "5",
         "nodeType": "function",
         "props": Object {
           "classType": undefined,
+          "favoriteCard": undefined,
           "model": undefined,
           "name": undefined,
           "passengerNumber": undefined,
@@ -112,10 +115,11 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "7",
         "nodeType": "function",
         "props": Object {
           "classType": undefined,
+          "favoriteCard": undefined,
           "model": undefined,
           "name": undefined,
           "passengerNumber": undefined,
@@ -136,12 +140,14 @@ ShallowWrapper {
         "children": Array [
           <Unknown
             classType={undefined}
+            favoriteCard={undefined}
             model={undefined}
             name={undefined}
             passengerNumber={undefined}
 />,
           <Unknown
             classType={undefined}
+            favoriteCard={undefined}
             model={undefined}
             name={undefined}
             passengerNumber={undefined}
@@ -153,10 +159,11 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "5",
           "nodeType": "function",
           "props": Object {
             "classType": undefined,
+            "favoriteCard": undefined,
             "model": undefined,
             "name": undefined,
             "passengerNumber": undefined,
@@ -167,10 +174,11 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "7",
           "nodeType": "function",
           "props": Object {
             "classType": undefined,
+            "favoriteCard": undefined,
             "model": undefined,
             "name": undefined,
             "passengerNumber": undefined,
@@ -226,6 +234,7 @@ ShallowWrapper {
       "children": Array [
         <Unknown
           climate={undefined}
+          favoriteCard={undefined}
           name={undefined}
           population={4000}
           residents={Array []}
@@ -233,6 +242,7 @@ ShallowWrapper {
 />,
         <Unknown
           climate={undefined}
+          favoriteCard={undefined}
           name={undefined}
           population={49595}
           residents={Array []}
@@ -245,10 +255,11 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "2",
         "nodeType": "function",
         "props": Object {
           "climate": undefined,
+          "favoriteCard": undefined,
           "name": undefined,
           "population": 4000,
           "residents": Array [],
@@ -260,10 +271,11 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "3",
         "nodeType": "function",
         "props": Object {
           "climate": undefined,
+          "favoriteCard": undefined,
           "name": undefined,
           "population": 49595,
           "residents": Array [],
@@ -285,6 +297,7 @@ ShallowWrapper {
         "children": Array [
           <Unknown
             climate={undefined}
+            favoriteCard={undefined}
             name={undefined}
             population={4000}
             residents={Array []}
@@ -292,6 +305,7 @@ ShallowWrapper {
 />,
           <Unknown
             climate={undefined}
+            favoriteCard={undefined}
             name={undefined}
             population={49595}
             residents={Array []}
@@ -304,10 +318,11 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "2",
           "nodeType": "function",
           "props": Object {
             "climate": undefined,
+            "favoriteCard": undefined,
             "name": undefined,
             "population": 4000,
             "residents": Array [],
@@ -319,10 +334,11 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "3",
           "nodeType": "function",
           "props": Object {
             "climate": undefined,
+            "favoriteCard": undefined,
             "name": undefined,
             "population": 49595,
             "residents": Array [],
@@ -378,12 +394,16 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Unknown
+          favoriteCard={undefined}
+          homeworld={undefined}
           language={undefined}
           name="leonard"
           population={undefined}
           species="asdfsa"
 />,
         <Unknown
+          favoriteCard={undefined}
+          homeworld={undefined}
           language={undefined}
           name="theo"
           population={undefined}
@@ -396,9 +416,11 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "0",
         "nodeType": "function",
         "props": Object {
+          "favoriteCard": undefined,
+          "homeworld": undefined,
           "language": undefined,
           "name": "leonard",
           "population": undefined,
@@ -410,9 +432,11 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "1",
         "nodeType": "function",
         "props": Object {
+          "favoriteCard": undefined,
+          "homeworld": undefined,
           "language": undefined,
           "name": "theo",
           "population": undefined,
@@ -433,12 +457,16 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Unknown
+            favoriteCard={undefined}
+            homeworld={undefined}
             language={undefined}
             name="leonard"
             population={undefined}
             species="asdfsa"
 />,
           <Unknown
+            favoriteCard={undefined}
+            homeworld={undefined}
             language={undefined}
             name="theo"
             population={undefined}
@@ -451,9 +479,11 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "0",
           "nodeType": "function",
           "props": Object {
+            "favoriteCard": undefined,
+            "homeworld": undefined,
             "language": undefined,
             "name": "leonard",
             "population": undefined,
@@ -465,9 +495,11 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "1",
           "nodeType": "function",
           "props": Object {
+            "favoriteCard": undefined,
+            "homeworld": undefined,
             "language": undefined,
             "name": "theo",
             "population": undefined,
