@@ -70,8 +70,8 @@ class App extends Component {
   }
 
   componentDidMount() {
-    // this.state.api.fetchIntros(this.state.helper.pickFilmIntro,
-                               // this.retrieveData)
+    this.state.api.fetchIntros(this.state.helper.pickFilmIntro,
+                               this.retrieveData)
   }
 
   render() {

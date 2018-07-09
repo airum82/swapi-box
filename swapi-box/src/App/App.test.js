@@ -35,8 +35,23 @@ describe('App', () => {
     expect(wrapper.instance().resetState).toHaveBeenCalled();
   })
 
-  it('retriveData should call determineCategory', () => {
-    const wrapper = shallow(<App />)
+  it('retrieveData should call determineCategory with correct params', () => {
+    const wrapper = shallow(<App />, { disableLifecycleMethods: true});
+    const mockData = ['this', 'that', 'some']
+    wrapper.instance().determineCategory = jest.fn();
+    wrapper.instance().retrieveData(mockData, mockData[0]);
+    expect(wrapper.instance().determineCategory).toHaveBeenCalledWith(mockData[0]);
+  })
+
+  it('favoriteCard should call determine category with correct params', () => {
+    const wrapper = shallow(<App />, { disableLifecycleMethods: true});
+    wrapper.instance().determineCategory = jest.fn();
+    wrapper.instance().setState({ planets: ['whatever', 'wherever'] });
+    const mockProps = {name: 'asdas',
+                       residents: 'rocky'};
+    wrapper.instance().favoriteCard(mockProps);
+    expect(wrapper.instance().determineCategory).toHaveBeenCalledWith(mockProps)
+
   })
   
 })
