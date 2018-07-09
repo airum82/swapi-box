@@ -25,10 +25,6 @@ class App extends Component {
     }
   }
 
-  viewFavorites = () => {
-
-  }
-
   resetState = () => {
     this.setState({
       people: [],
@@ -37,27 +33,45 @@ class App extends Component {
     })
   }
 
-  retrieveData = (data, sampleItem) => {
-    this.resetState()
+  determineCategory = (sampleItem) => {
     let category;
     if(Object.keys(sampleItem).includes('residents')) {
       category = 'planets';
     } else if(Object.keys(sampleItem).includes('model')) {
       category = 'vehicles';
+    } else if(Object.keys(sampleItem).includes('intro')) {
+      category = 'intro';
     } else {
       category = 'people'
     }
+    return category
+  }
+
+  retrieveData = (data, sampleItem) => {
+    this.resetState()
+    const category = this.determineCategory(sampleItem)
     this.setState({
       [category]: data
     })
   }
 
+  favoriteCard = (props) => {
+    const category = this.determineCategory(props);
+    const newFavorite = this.state[category].map(item => {
+      if(item.name === props.name) {
+        return {...item, favorite: true}
+      } else {
+        return item;
+      }
+    });
+    this.setState({ 
+      [category]: newFavorite 
+    })
+  }
+
   componentDidMount() {
-    const url = "https://swapi.co/api/films/";
-    fetch(url)
-    .then(response => response.json())
-    .then(result => this.state.helper.pickFilmIntro(result))
-    .then(intro => this.setState({ intro }))
+    this.state.api.fetchIntros(this.state.helper.pickFilmIntro,
+                               this.retrieveData)
   }
 
   render() {
@@ -91,9 +105,12 @@ class App extends Component {
               cleanVehicles={this.state.helper.cleanVehicles}
               retrieveVehicles={this.retrieveData} 
             />
-            <FavoritesButton viewFavorites={this.viewFavorites}/>
+            <FavoritesButton />
           </section>
-          <CategoryContainer category={category}/>
+          <CategoryContainer 
+            category={category}
+            favoriteCard={this.favoriteCard}
+          />
         </main>
       </div>
     );

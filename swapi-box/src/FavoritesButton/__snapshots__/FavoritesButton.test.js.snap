@@ -4,9 +4,7 @@ exports[`FavoritesButton Should match snapshot upon render 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown
-    viewFavorites={[Function]}
-/>,
+  Symbol(enzyme.__unrendered__): <FavoritesButton />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -19,12 +17,57 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "favorites",
-      "onClick": [Function],
+      "children": Array [
+        <button
+          className="favorite-button"
+          onClick={[Function]}
+>
+          favorites
+</button>,
+        <span
+          className="favorites-count"
+>
+           
+          0
+</span>,
+      ],
+      "className": "favorites",
     },
     "ref": null,
-    "rendered": "favorites",
-    "type": "button",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "favorites",
+          "className": "favorite-button",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "favorites",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            " ",
+            0,
+          ],
+          "className": "favorites-count",
+        },
+        "ref": null,
+        "rendered": Array [
+          " ",
+          0,
+        ],
+        "type": "span",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
@@ -32,12 +75,57 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "favorites",
-        "onClick": [Function],
+        "children": Array [
+          <button
+            className="favorite-button"
+            onClick={[Function]}
+>
+            favorites
+</button>,
+          <span
+            className="favorites-count"
+>
+             
+            0
+</span>,
+        ],
+        "className": "favorites",
       },
       "ref": null,
-      "rendered": "favorites",
-      "type": "button",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "favorites",
+            "className": "favorite-button",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "favorites",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              " ",
+              0,
+            ],
+            "className": "favorites-count",
+          },
+          "ref": null,
+          "rendered": Array [
+            " ",
+            0,
+          ],
+          "type": "span",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

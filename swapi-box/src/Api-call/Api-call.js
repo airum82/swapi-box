@@ -3,32 +3,47 @@ export class apiHelper {
 
   }
 
-  viewPeople = (cleanPeople, setStateData) => {
+  fetchIntros = (pickFilmIntro, retrieveData) => {
+  const url = "https://swapi.co/api/films/";
+    fetch(url)
+    .then(response => response.json())
+    .then(result => pickFilmIntro(result))
+    .then(intro => retrieveData(intro, intro))
+  }
+
+  viewPeople = (cleanPeople, 
+    setStateData, 
+    retrieveHomeworld, 
+    retrieveSpecies) => {
+    const retrieveNestedHomeworld = retrieveHomeworld || this.retrieveNestedHomeworld
+    const retrieveNestedSpecies = retrieveSpecies || this.retrieveNestedSpecies
     const url = 'https://swapi.co/api/people/';
     fetch(url)
     .then(response => response.json())
     .then(result => cleanPeople(result))
-    .then(people => this.retrieveNestedHomeworld(people))
-    .then(people => this.retreiveNestedSpecies(people))
+    .then(people => retrieveNestedHomeworld(people))
+    .then(people => retrieveNestedSpecies(people))
     .then(cleanPeople => setStateData(cleanPeople, cleanPeople[0]))
+    .catch(error => setStateData(error.message))
   }
 
   retrieveNestedHomeworld = (people) => {
     const promiseGroup = people.map( person => {
       return (
-        fetch(person.homeworld)
+        window.fetch(person.homeworld)
         .then(response => response.json())
         .then(result => ({
                           homeworld: result.name,
                           population: result.population
                         }))
         .then(data => ({...person, ...data}))
+        .catch(error => error.message)
       )
     });
     return Promise.all(promiseGroup)
   }
 
-  retreiveNestedSpecies = (people, getSpeciesData) => {
+  retrieveNestedSpecies = (people) => {
     const promiseGroup = people.map( person => {
       return (
         fetch(person.species)
@@ -38,6 +53,7 @@ export class apiHelper {
                           language: result.language
                         }))
         .then(data => ({...person, ...data}))
+        .catch(error => error.message)
       )
     });
     return Promise.all(promiseGroup)
@@ -53,9 +69,11 @@ export class apiHelper {
     .catch(error => console.log(error.message));
   }
 
-  retrievePlanetResidents = (planets) => {
+  retrievePlanetResidents = (planets, fetchResidents) => {
+    const fetchNestedResidents = fetchResidents || this.fetchResidents;
     const citizens = planets.map( planet => {    
-        return this.fetchResidents(planet.residents).then(names => ({...planet, residents : names}))
+        return fetchNestedResidents(planet.residents)
+               .then(names => ({...planet, residents : names}))
       })
     return Promise.all(citizens);
   }

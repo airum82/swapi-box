@@ -1,0 +1,524 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CategoryContainer should match snapshot upon initial render 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    category={Array []}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": "",
+      "className": "category-container",
+    },
+    "ref": null,
+    "rendered": "",
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": "",
+        "className": "category-container",
+      },
+      "ref": null,
+      "rendered": "",
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`CategoryContainer should match snapshot when category container has length 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    category={
+        Array [
+            Object {
+              "kind": "does not matter",
+            },
+            Object {
+              "kind": "still does not",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Unknown
+          classType={undefined}
+          favoriteCard={undefined}
+          model={undefined}
+          name={undefined}
+          passengerNumber={undefined}
+/>,
+        <Unknown
+          classType={undefined}
+          favoriteCard={undefined}
+          model={undefined}
+          name={undefined}
+          passengerNumber={undefined}
+/>,
+      ],
+      "className": "category-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "5",
+        "nodeType": "function",
+        "props": Object {
+          "classType": undefined,
+          "favoriteCard": undefined,
+          "model": undefined,
+          "name": undefined,
+          "passengerNumber": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "7",
+        "nodeType": "function",
+        "props": Object {
+          "classType": undefined,
+          "favoriteCard": undefined,
+          "model": undefined,
+          "name": undefined,
+          "passengerNumber": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Unknown
+            classType={undefined}
+            favoriteCard={undefined}
+            model={undefined}
+            name={undefined}
+            passengerNumber={undefined}
+/>,
+          <Unknown
+            classType={undefined}
+            favoriteCard={undefined}
+            model={undefined}
+            name={undefined}
+            passengerNumber={undefined}
+/>,
+        ],
+        "className": "category-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "5",
+          "nodeType": "function",
+          "props": Object {
+            "classType": undefined,
+            "favoriteCard": undefined,
+            "model": undefined,
+            "name": undefined,
+            "passengerNumber": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "7",
+          "nodeType": "function",
+          "props": Object {
+            "classType": undefined,
+            "favoriteCard": undefined,
+            "model": undefined,
+            "name": undefined,
+            "passengerNumber": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`CategoryContainer should match snapshot when category has length and first item has a residents key 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    category={
+        Array [
+            Object {
+              "population": 4000,
+              "residents": Array [],
+            },
+            Object {
+              "population": 49595,
+              "residents": Array [],
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Unknown
+          climate={undefined}
+          favoriteCard={undefined}
+          name={undefined}
+          population={4000}
+          residents={Array []}
+          terrain={undefined}
+/>,
+        <Unknown
+          climate={undefined}
+          favoriteCard={undefined}
+          name={undefined}
+          population={49595}
+          residents={Array []}
+          terrain={undefined}
+/>,
+      ],
+      "className": "category-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "function",
+        "props": Object {
+          "climate": undefined,
+          "favoriteCard": undefined,
+          "name": undefined,
+          "population": 4000,
+          "residents": Array [],
+          "terrain": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "3",
+        "nodeType": "function",
+        "props": Object {
+          "climate": undefined,
+          "favoriteCard": undefined,
+          "name": undefined,
+          "population": 49595,
+          "residents": Array [],
+          "terrain": undefined,
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Unknown
+            climate={undefined}
+            favoriteCard={undefined}
+            name={undefined}
+            population={4000}
+            residents={Array []}
+            terrain={undefined}
+/>,
+          <Unknown
+            climate={undefined}
+            favoriteCard={undefined}
+            name={undefined}
+            population={49595}
+            residents={Array []}
+            terrain={undefined}
+/>,
+        ],
+        "className": "category-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "climate": undefined,
+            "favoriteCard": undefined,
+            "name": undefined,
+            "population": 4000,
+            "residents": Array [],
+            "terrain": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "3",
+          "nodeType": "function",
+          "props": Object {
+            "climate": undefined,
+            "favoriteCard": undefined,
+            "name": undefined,
+            "population": 49595,
+            "residents": Array [],
+            "terrain": undefined,
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`CategoryContainer should match snapshot when category has length and first item has a species key 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    category={
+        Array [
+            Object {
+              "name": "leonard",
+              "species": "asdfsa",
+            },
+            Object {
+              "name": "theo",
+              "species": "asdfasdf",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Unknown
+          favoriteCard={undefined}
+          homeworld={undefined}
+          language={undefined}
+          name="leonard"
+          population={undefined}
+          species="asdfsa"
+/>,
+        <Unknown
+          favoriteCard={undefined}
+          homeworld={undefined}
+          language={undefined}
+          name="theo"
+          population={undefined}
+          species="asdfasdf"
+/>,
+      ],
+      "className": "category-container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "0",
+        "nodeType": "function",
+        "props": Object {
+          "favoriteCard": undefined,
+          "homeworld": undefined,
+          "language": undefined,
+          "name": "leonard",
+          "population": undefined,
+          "species": "asdfsa",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "favoriteCard": undefined,
+          "homeworld": undefined,
+          "language": undefined,
+          "name": "theo",
+          "population": undefined,
+          "species": "asdfasdf",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Unknown
+            favoriteCard={undefined}
+            homeworld={undefined}
+            language={undefined}
+            name="leonard"
+            population={undefined}
+            species="asdfsa"
+/>,
+          <Unknown
+            favoriteCard={undefined}
+            homeworld={undefined}
+            language={undefined}
+            name="theo"
+            population={undefined}
+            species="asdfasdf"
+/>,
+        ],
+        "className": "category-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "0",
+          "nodeType": "function",
+          "props": Object {
+            "favoriteCard": undefined,
+            "homeworld": undefined,
+            "language": undefined,
+            "name": "leonard",
+            "population": undefined,
+            "species": "asdfsa",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "favoriteCard": undefined,
+            "homeworld": undefined,
+            "language": undefined,
+            "name": "theo",
+            "population": undefined,
+            "species": "asdfasdf",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
